@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="days">
+
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <array name="groups">
+        <item>4-41</item>
+        <item>4-42</item>
+        <item>4-43</item>
+        <item>4-44</item>
+        <item>4-45</item>
+        <item>4-46</item>
+        <item>4-47</item>
+    </array>
+
+</resources>

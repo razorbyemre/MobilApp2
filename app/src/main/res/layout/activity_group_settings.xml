@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    tools:context=".GroupSettingsActivity">
+
+
+    <EditText
+        android:id="@+id/editTextGroup"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter The Group Name"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteGroup" />
+
+    <Spinner
+        android:id="@+id/spnGroup"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteGroup"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="40dp"
+        android:text="Delete Group"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnGroup" />
+
+    <Button
+        android:id="@+id/btnAddGroup"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="169dp"
+        android:text="Add Group"
+        app:layout_constraintBottom_toTopOf="@+id/btnGroupBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
+
+    <Button
+        android:id="@+id/btnGroupBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="39dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

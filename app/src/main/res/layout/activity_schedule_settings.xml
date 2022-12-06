@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    tools:context=".ScheduleSettingsActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/schedule_settings"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/spnDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnDay"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/days"
+        app:layout_constraintBottom_toTopOf="@+id/spnGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spnGroup"
+        android:layout_width="384dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="519dp"
+        android:entries="@array/groups"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnDay"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+    <EditText
+        android:id="@+id/editTextLesson"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter The Lesson"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddLesson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnGroup" />
+
+    <Button
+        android:id="@+id/btnAddLesson"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="22dp"
+        android:text="Add Lesson"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLesson" />
+
+
+    <EditText
+        android:id="@+id/editTextDelete"
+        android:layout_width="383dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter The Lesson Name "
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteLesson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddLesson" />
+
+    <Button
+        android:id="@+id/btnDeleteLesson"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="220dp"
+        android:text="Delete Lesson"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDelete" />
+
+    <Button
+        android:id="@+id/btnScheduleBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="47dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteLesson" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
